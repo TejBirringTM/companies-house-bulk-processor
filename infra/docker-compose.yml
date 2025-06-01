@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  arangodb:
+    image: arangodb:latest
+    container_name: arangodb
+    environment:
+      - ARANGO_ROOT_PASSWORD=${DOCKER_COMPOSE_ARANGO_ROOT_PWD} 
+      # - ARANGO_NO_AUTH=1 # uncomment to disable authentication
+    ports:
+      - "8529:8529" # web interface and REST API
+    volumes:
+      - arangodb_data:/var/lib/arangodb3
+      - arangodb_apps:/var/lib/arangodb3-apps
+    networks:
+      - arangodb_network
+    restart: unless-stopped
+
+volumes:
+  arangodb_data:
+  arangodb_apps:
+
+networks:
+  arangodb_network:
+    driver: bridge
