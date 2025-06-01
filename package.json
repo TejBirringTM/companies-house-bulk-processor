@@ -1,7 +1,7 @@
 {
     "name": "companies-house-uk-csv-processor",
     "version": "0.0.0",
-    "description": "A script for processing bulk data obtained from Companies House UK in CSV format; useful for normalising, filtering and uploading to DB such as ArangoDB or Google BigQuery.",
+    "description": "A Node.js script (authored in TypeScript) for processing bulk data obtained from Companies House UK in CSV format. Useful for normalising, filtering, and uploading to databases such as ArangoDB or Google BigQuery. Provides a solid foundation for company analysis projects (e.g., augmenting company information with web scraping) for market research purposes.",
     "main": "index.js",
     "engines": {
         "node": ">=23.0.0"
