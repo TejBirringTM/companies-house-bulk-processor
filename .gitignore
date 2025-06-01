@@ -1,0 +1,18 @@
+# output from diagnosis
+.clinic/
+
+# to store service keys, etc.
+.credentials/
+
+# managed dependencies
+node_modules/
+
+# env files
+.env
+.env.*
+
+# logs
+*.log
+
+# system files
+.DS_Store

@@ -1,0 +1,49 @@
+{
+    "name": "companies-house-uk-csv-processor",
+    "version": "0.0.0",
+    "description": "A script for processing bulk data obtained from Companies House UK in CSV format; useful for normalising, filtering and uploading to DB such as ArangoDB or Google BigQuery.",
+    "main": "index.js",
+    "engines": {
+        "node": ">=23.0.0"
+    },
+    "scripts": {
+        "go": "jiti src/index.ts",
+        "go:log-output": "jiti src/index.ts 2>&1 | tee output.log",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "tsc --noEmit && prettier --write **/*.{mts,ts,json}"
+    },
+    "pre-commit": [
+        "npm run format"
+    ],
+    "keywords": [
+        "companies house",
+        "csv",
+        "pipeline",
+        "processor",
+        "data",
+        "upload",
+        "insert",
+        "batch",
+        "bulk",
+        "processing"
+    ],
+    "author": {
+        "name": "Tej Birring",
+        "email": "tejbirring@gmail.com"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "clinic": "^13.0.0",
+        "jiti": "^2.4.2",
+        "pre-commit": "^1.2.2",
+        "prettier": "^3.5.3",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "arangojs": "^10.1.1",
+        "csv-parse": "^5.6.0",
+        "date-fns": "^4.1.0",
+        "dotenv": "^16.5.0",
+        "zod": "^3.25.36"
+    }
+}
