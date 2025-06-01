@@ -1,11 +1,11 @@
-# Companies House UK Bulk Data Processor
-
 [![TypeScript](https://img.shields.io/badge/TypeScript-5%2B-007acc)](https://www.typescriptlang.org/)
 [![Node.js Version](https://img.shields.io/badge/Node-%3E%3D23-336633)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-darkred.svg)](https://opensource.org/licenses/MIT)
 [![Open Issues](https://img.shields.io/github/issues-raw/TejBirringTM/companies-house-bulk-processor)](https://github.com/TejBirringTM/companies-house-bulk-processor/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/TejBirringTM/companies-house-bulk-processor)](https://github.com/TejBirringTM/companies-house-bulk-processor/commits/main)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
+# Companies House UK Bulk Data Processor
 
 A Node.js script for processing bulk data obtained from Companies House UK in CSV format. Useful for normalising, filtering, and uploading to databases such as ArangoDB or Google BigQuery.
 
