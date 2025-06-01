@@ -5,4 +5,12 @@ export default {
     semi: true,
     tabWidth: 4,
     trailingComma: "es5",
+    overrides: [
+        {
+            files: "**/*.md",
+            options: {
+                tabWidth: 2,
+            },
+        },
+    ],
 } satisfies Config;
