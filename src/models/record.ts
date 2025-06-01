@@ -6,7 +6,7 @@ import {
   NullableString,
   RequiredNumber,
   NullableSic,
-} from "./transforms";
+} from "./generics";
 
 export const RawRecord = z.object({
   CompanyName: RequiredString,
