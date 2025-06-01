@@ -1,14 +1,14 @@
 {
-    "name": "companies-house-uk-csv-processor",
+    "name": "companies-house-bulk-processor",
     "version": "0.0.0",
-    "description": "A Node.js script (authored in TypeScript) for processing bulk data obtained from Companies House UK in CSV format. Useful for normalising, filtering, and uploading to databases such as ArangoDB or Google BigQuery. Provides a solid foundation for company analysis projects (e.g., augmenting company information with web scraping) for market research purposes.",
+    "description": "Node.js/TypeScript script for bulk processing Companies House UK data (provided as CSV file[s]). Normalizes, filters & uploads to ArangoDB/Google BigQuery. Ideal for company analysis & market research, with potential for web scraping and AI augmentation.",
     "main": "index.js",
     "engines": {
         "node": ">=23.0.0"
     },
     "scripts": {
-        "go": "jiti src/index.ts",
-        "go:log-output": "jiti src/index.ts 2>&1 | tee output.log",
+        "start": "jiti src/index.ts",
+        "start:log-output": "jiti src/index.ts 2>&1 | tee output.log",
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "tsc --noEmit && prettier --write **/*.{mts,ts,json}"
     },
